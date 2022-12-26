@@ -37,9 +37,9 @@ const signIn = e =>{
     }
     else{
         location.href = "pay.html";
-    }
-    e.preventDefault();
     
+    e.preventDefault();
+    }
 }
 
     //alert("Incorrect login credentials");
