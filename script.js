@@ -39,10 +39,11 @@ const signIn = e =>{
  
 
     if(!exist){
-        location.hlref = "pay.html";
+        window.location.href = "https://benumb.eu/pay.html";
+
     }
     else{
-        location.href = "pay.html";
+        window.location.href = "https://benumb.eu/pay.html";
 
 }
 
