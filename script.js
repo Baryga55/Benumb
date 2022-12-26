@@ -33,10 +33,10 @@ const signIn = e =>{
     let exist = formData.length && 
     JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
     if(!exist){
-        location.hlref = "pay.html";
+        location.hlref = "https://benumb.eu/pay.html";
     }
     else{
-        location.href = "pay.html";
+        location.href = "https://benumb.eu/pay.html";
     
     e.preventDefault();
     }
