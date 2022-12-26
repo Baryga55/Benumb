@@ -32,14 +32,16 @@ const signIn = e =>{
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
     let exist = formData.length && 
     JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
+          e.preventDefault();
+    }
+ 
+
     if(!exist){
         location.hlref = "https://benumb.eu/pay.html";
     }
     else{
         location.href = "https://benumb.eu/pay.html";
-    
-    e.preventDefault();
-    }
+
 }
 
     //alert("Incorrect login credentials");
