@@ -11,6 +11,9 @@ const signUp = e => {
             data.fname.toLowerCase() == fname.toLowerCase() && 
             data.lname.toLowerCase() == lname.toLowerCase()
         );
+    
+        e.preventDefault();
+    }
 
     if(!exist){
         formData.push({ fname, lname, email, pwd });
@@ -23,8 +26,7 @@ const signUp = e => {
     else{
         alert("Ooopppssss... Duplicate found!!!\nYou have already signed up");
 
-    e.preventDefault();
-    }
+
 }
 
 const signIn = e =>{
