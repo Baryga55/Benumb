@@ -39,11 +39,11 @@ const signIn (e){
  
 
     if(!exist){
-        window.location.href = "https://benumb.eu/pay.html";
+        location.href = "/pay.html";
 
     }
     else{
-        window.location.href = "https://benumb.eu/pay.html";
+        location.href = "/pay.html";
 
 }
 
