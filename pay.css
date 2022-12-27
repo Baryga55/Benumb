@@ -8,7 +8,7 @@ body{
   zoom: 1.0 ;
 }
 
-@-ms-viewport {
+@-webkit-viewport {
   width: device-width ;
 }
 
