@@ -43,5 +43,11 @@ const signIn = e =>{
         location.href = "/pay.html";
 
 }
+    
+      function passvalues()
+    {
+        var firstname=document.getElementById("email").value;
+        return false;
+    }
 
     //alert("Incorrect login credentials");
