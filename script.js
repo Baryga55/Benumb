@@ -1,4 +1,4 @@
-const signUp(e){
+const signUp = e =>{
     let fname = document.getElementById('fname').value,
         lname = document.getElementById('lname').value,
         email = document.getElementById('email').value,
@@ -29,7 +29,7 @@ const signUp(e){
 
 }
 
-const signIn (e){
+const signIn = e =>{
     let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
     let exist = formData.length && 
