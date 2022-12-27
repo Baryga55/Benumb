@@ -8,6 +8,10 @@ body{
   zoom: 1.0 ;
 }
 
+@-ms-viewport {
+  width: device-width ;
+}
+
 img.background {
     position: absolute;
     left: 0px;
