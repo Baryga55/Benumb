@@ -12,8 +12,6 @@ const signUp = e =>{
             data.lname.toLowerCase() == lname.toLowerCase()
         );
     
-        e.preventDefault();
-    }
 
     if(!exist){
         formData.push({ fname, lname, email, pwd });
@@ -34,8 +32,7 @@ const signIn = e =>{
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
     let exist = formData.length && 
     JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
-          e.preventDefault();
-    }
+ 
  
 
     if(!exist){
