@@ -78,6 +78,10 @@ p{
     margin-top: 4%;
 }
 
+input{
+  margin-top: 2%;
+}
+
 input.submit{
   background-color: #006674;
   color: rgb(200, 255, 200);
